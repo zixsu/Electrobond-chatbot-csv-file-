@@ -1,0 +1,25 @@
+!pip install langchain_community tiktoken langchain-openai langchainhub chromadb langchain
+pip install -U langsmith
+import os
+!pip install PyPDF2 langchain openai
+!pip install tabula-py
+import tabula
+import pandas as pd
+from typing import List, Tuple
+!pip install -U langchain-openai
+!pip install langchain faiss-cpu
+from langchain_openai import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+from langchain.llms import OpenAI
+from langchain_community.document_loaders.csv_loader import CSVLoader
+from langchain import hub
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders.csv_loader import CSVLoader
+from langchain_community.document_loaders.csv_loader import CSVLoader
+from langchain_community.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnablePassthrough
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_openai import OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
